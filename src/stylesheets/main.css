@@ -1,15 +1,13 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   color: var(--f-clr);
   background-color: var(--bg);
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-
-  height: 100dvh;
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
 
   & > * {
     border: 1px solid red;
