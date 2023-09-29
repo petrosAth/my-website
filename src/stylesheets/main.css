@@ -1,5 +1,6 @@
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: both;
 }
 
 body {
@@ -9,11 +10,31 @@ body {
 
 .app {
   & > * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
 
     min-height: 100dvh;
     scroll-snap-align: start;
+  }
+}
+
+.header {
+  padding: 1rem;
+}
+
+.header__contact {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline;
+    }
+  }
+
+  .header__contact__resume {
+    display: block;
   }
 }
 
@@ -23,13 +44,13 @@ body {
 
   display: grid;
   grid-auto-columns: 70dvw;
-  grid-auto-rows: 80dvh;
   grid-auto-flow: column;
   gap: 1em;
 
   & > article {
     scroll-snap-align: center;
     box-sizing: border-box;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    background-color: var(--bg-light);
   }
 }
