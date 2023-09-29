@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/9236152b7e.js" crossorigin="anonymous"></script>
     <title>Petros Athanasoulis - Software Developer</title>
   </head>
   <body>
     <div class="app">
       <header class="header">
-        <h1>Petros Athanasoulis</h1>
-        <h2>Software Developer</h2>
-        <p>
-          Transforming visual creativity into functional innovation as a software developer with a passion for design.
-        </p>
-        <details>
-          <summary>About</summary>
+        <div class="header__title">
+          <h1>Petros Athanasoulis</h1>
+          <h2>Software Developer</h2>
+          <p>
+            Transforming visual creativity into functional innovation as a software developer with a passion for design.
+          </p>
+        </div>
+        <div class="header__about">
+          <h3>About</h3>
           <p>
             Hello! I'm Petros, a dedicated individual with a background in graphic design who has transitioned into the
             dynamic world of software development. I'm passionate about crafting digital solutions that combine
@@ -30,13 +33,19 @@
             opportunities and collaborations. Please don't hesitate to get in touch if you'd like to discuss potential
             projects or collaborations.
           </p>
-        </details>
-        <div class="portfolio__contact">
+        </div>
+        <div class="header__contact">
           <ul>
-            <li><a href="mailto: petros@athanasoulis.me">Email</a></li>
-            <li><a href="https://github.com/petrosAth">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/petros-athanasoulis/">LinkedIn</a></li>
-            <li><a href="#">Resume</a></li>
+            <li class="header__contact__mail">
+              <a href="mailto: petros@athanasoulis.me"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li class="header__contact__github">
+              <a href="https://github.com/petrosAth"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="header__contact__linkedin">
+              <a href="https://www.linkedin.com/in/petros-athanasoulis/"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="header__contact__resume">Download my <a href="#">resume</a></li>
           </ul>
         </div>
       </header>
