@@ -12,11 +12,11 @@
   --fs-p: 1rem;
   --fs-btn: 1.5rem;
 
-  --f-clr: hsla(0, 0%, 100%, 1);
-  --f-clr-dark: hsla(0, 0%, 0%, 1);
-  --clr-primary: hsla(180, 70%, 40%, 1);
-  --bg: hsla(0, 0%, 0%, 1);
-  --bg-light: hsla(0, 0%, 50%, 1);
+  --f-clr: hsla(203, 75%, 98%, 1);
+  --clr-primary: hsla(203, 75%, 48%, 1);
+  --clr-secondary: hsla(145, 97%, 46%, 1);
+  --bg: hsla(203, 75%, 8%, 1);
+  --bg-light: hsla(203, 75%, 18%, 1);
 
   --b: 4px dotted var(--bg);
   --br: 10px;
