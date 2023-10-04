@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: var(--ff);
+}
+
+h1 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-b);
+  color: var(--f-clr-h);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-sb);
+  color: var(--f-clr-h);
+  margin-block: var(--pd-el-top) 0;
+}
+
+h3 {
+  font-size: var(--fs-3);
+  color: var(--f-clr-h);
+}
+
+h4 {
+  font-size: var(--fs-4);
+  color: var(--f-clr-h);
+}
+
+p {
+  font-size: var(--fs-p);
+  font-weight: var(--fw-r);
+  color: var(--f-clr);
+  margin-block: var(--pd-el-top) 0;
+}
