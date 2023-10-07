@@ -15,20 +15,9 @@ body {
   padding-inline: var(--pd-glb-i);
 }
 
-.header__title {
-  & > h2 {
-    font-size: 1.125rem;
-    font-weight: var(--fw-m);
-  }
-}
-
 .about {
   padding-block: var(--pd-glb-b) 0;
   padding-inline: var(--pd-glb-i);
-}
-
-.about__title {
-  text-transform: uppercase;
 }
 
 .projects {
@@ -37,10 +26,6 @@ body {
   & > *:not(.projects__grid) {
     padding-inline: var(--pd-glb-i);
   }
-}
-
-.projects__title {
-  text-transform: uppercase;
 }
 
 .projects__grid {
@@ -64,4 +49,14 @@ body {
 .footer {
   padding-block: var(--pd-glb-b);
   padding-inline: var(--pd-glb-i);
+}
+
+.footer__list {
+  margin-block: var(--pd-el-top) 0;
+}
+
+.footer__list__link {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-items: start;
 }

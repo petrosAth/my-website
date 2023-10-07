@@ -13,7 +13,7 @@ h1 {
 
 h2 {
   font-size: var(--fs-2);
-  font-weight: var(--fw-sb);
+  font-weight: var(--fw-m);
   color: var(--f-clr-h);
   margin-block: var(--pd-el-top) 0;
 }
