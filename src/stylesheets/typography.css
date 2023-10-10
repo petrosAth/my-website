@@ -15,12 +15,15 @@ h2 {
   font-size: var(--fs-2);
   font-weight: var(--fw-m);
   color: var(--f-clr-h);
-  margin-block: var(--pd-el-top) 0;
+  margin: 0;
+  padding-top: var(--pd-el-b);
 }
 
 h3 {
   font-size: var(--fs-3);
   color: var(--f-clr-h);
+  margin: 0;
+  padding-top: var(--pd-el-b);
 }
 
 h4 {
@@ -32,5 +35,6 @@ p {
   font-size: var(--fs-p);
   font-weight: var(--fw-r);
   color: var(--f-clr);
-  margin-block: var(--pd-el-top) 0;
+  margin: 0;
+  padding-top: var(--pd-el-b);
 }

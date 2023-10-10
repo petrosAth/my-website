@@ -32,7 +32,8 @@
   /* Paddings */
   --pd-glb-b: 1.5rem;
   --pd-glb-i: 1.5rem;
-  --pd-el-top: 0.875rem;
+  --pd-el-b: 0.875rem;
+  --pd-el-i: 0.875rem;
 
   /* Borders */
   --b: 4px dotted var(--bg);
