@@ -47,6 +47,12 @@ body {
   padding: var(--pd-el-b) var(--pd-el-i);
 }
 
+.projects__grid__item__topics {
+  padding-top: calc(var(--pd-el-b) / 2);
+}
+
+.projects__grid__item__links {
+  padding-top: calc(var(--pd-el-b) / 2);
 }
 
 .footer {
