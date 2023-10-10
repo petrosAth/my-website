@@ -28,7 +28,9 @@ h3 {
 
 h4 {
   font-size: var(--fs-4);
-  color: var(--f-clr-h);
+  font-weight: var(--fw-m);
+  color: var(--clr-secondary);
+  margin: 0;
 }
 
 p {
@@ -37,4 +39,8 @@ p {
   color: var(--f-clr);
   margin: 0;
   padding-top: var(--pd-el-b);
+}
+
+a {
+  color: var(--clr-primary);
 }

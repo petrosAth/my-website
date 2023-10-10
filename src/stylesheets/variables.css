@@ -17,7 +17,7 @@
   --fs-1: 2.125rem;
   --fs-2: 1.25rem;
   --fs-3: 1.25rem;
-  --fs-4: 1.25rem;
+  --fs-4: 0.75rem;
   --fs-p: 1rem;
   --fs-btn: 1.5rem;
 
@@ -36,6 +36,6 @@
   --pd-el-i: 0.875rem;
 
   /* Borders */
-  --b: 4px dotted var(--bg);
-  --br: 10px;
+  --b: 0.125rem solid var(--clr-secondary);
+  --br: 1.25rem;
 }
