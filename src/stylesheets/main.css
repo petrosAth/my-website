@@ -59,18 +59,18 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: start;
+
+  @media (max-width: 330px) {
+    & {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      padding-block: calc(var(--pd-el-top) / 2);
+    }
+  }
 }
 
 .footer__list__link__label {
   & > i {
     width: 2ch;
-  }
-}
-
-@media (max-width: 330px) {
-  .footer__list__link {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    padding-block: calc(var(--pd-el-top) / 2);
   }
 }
