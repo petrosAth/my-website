@@ -64,9 +64,19 @@ body {
 }
 
 .projects__grid__item__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: auto;
   padding-top: var(--pd-el-b);
+  text-align: center;
+
+  & > a {
     background-color: var(--clr-prm-400);
     color: var(--clr-f-900);
+    border-radius: calc(var(--br) - var(--pd-el-b));
+    padding: 0.625rem;
+  }
 }
 
 .footer {
