@@ -79,6 +79,16 @@ body {
   }
 }
 
+.projects__grid__item__links__site {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.projects__grid__item__links__source {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 .footer {
   padding-block: var(--pd-glb-b);
   padding-inline: var(--pd-glb-i);
