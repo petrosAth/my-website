@@ -43,4 +43,6 @@ p {
 
 a {
   color: var(--clr-prm-400);
+  font-weight: var(--fw-m);
+  text-decoration: none;
 }
