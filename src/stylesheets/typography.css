@@ -13,7 +13,7 @@ h1 {
 
 h2 {
   font-size: var(--fs-2);
-  font-weight: var(--fw-m);
+  font-weight: var(--fw-sb);
   color: var(--clr-f-900);
   margin: 0;
   padding-top: var(--pd-el-b);
@@ -21,7 +21,8 @@ h2 {
 
 h3 {
   font-size: var(--fs-3);
-  color: var(--clr-f-900);
+  font-weight: var(--fw-m);
+  color: var(--clr-f-800);
   margin: 0;
   padding-top: var(--pd-el-b);
 }
@@ -43,6 +44,6 @@ p {
 
 a {
   color: var(--clr-prm-400);
-  font-weight: var(--fw-m);
+  font-weight: var(--fw-r);
   text-decoration: none;
 }
