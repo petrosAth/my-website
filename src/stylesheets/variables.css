@@ -84,15 +84,16 @@
   --clr-f-800: hsla(var(--h), var(--s), 96%, min(1, calc(var(--clr-f-a) + var(--clr-f-a-more) * 4)));
   --clr-f-900: hsla(var(--h), var(--s), 96%, min(1, calc(var(--clr-f-a) + var(--clr-f-a-more) * 5)));
 
-  --clr-bg-100: hsla(var(--h), var(--s), max(0, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 3), 1));
-  --clr-bg-200: hsla(var(--h), var(--s), max(0, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 2), 1));
-  --clr-bg-300: hsla(var(--h), var(--s), max(0, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 1), 1));
+  --clr-bg-100: hsla(var(--h), var(--s), max(0%, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 3)), 1);
+  --clr-bg-200: hsla(var(--h), var(--s), max(0%, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 2)), 1);
+  --clr-bg-300: hsla(var(--h), var(--s), max(0%, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 1)), 1);
   --clr-bg-400: hsla(var(--h), var(--s), var(--clr-bg-lgt), 1);
-  --clr-bg-500: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 1), 1));
-  --clr-bg-600: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 2), 1));
-  --clr-bg-700: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 3), 1));
-  --clr-bg-800: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 4), 1));
-  --clr-bg-900: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 5), 1));
+  --clr-bg-500: hsla(var(--h), var(--s), min(100%, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 1)), 1);
+  --clr-bg-500: hsla(var(--h), var(--s), min(100%, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 1)), 1);
+  --clr-bg-600: hsla(var(--h), var(--s), min(100%, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 2)), 1);
+  --clr-bg-700: hsla(var(--h), var(--s), min(100%, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 3)), 1);
+  --clr-bg-800: hsla(var(--h), var(--s), min(100%, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 4)), 1);
+  --clr-bg-900: hsla(var(--h), var(--s), min(100%, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 5)), 1);
 
   /* Paddings */
   --pd-glb-b: 1.5rem;
