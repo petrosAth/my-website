@@ -28,6 +28,15 @@ body {
   }
 }
 
+.projects__title {
+  @media (min-width: 550px) {
+    & {
+      position: sticky;
+      top: 1px;
+    }
+  }
+}
+
 .projects__grid {
   padding-block: var(--pd-el-b) 0;
   scroll-snap-type: x mandatory;
