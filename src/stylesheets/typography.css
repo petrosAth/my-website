@@ -29,7 +29,7 @@ h3 {
 h4 {
   font-size: var(--fs-4);
   font-weight: var(--fw-m);
-  color: var(--clr-sec);
+  color: var(--clr-sec-400);
   margin: 0;
 }
 
@@ -42,5 +42,5 @@ p {
 }
 
 a {
-  color: var(--clr-prm);
+  color: var(--clr-prm-400);
 }

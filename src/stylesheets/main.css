@@ -65,7 +65,7 @@ body {
 
 .projects__grid__item__links {
   padding-top: var(--pd-el-b);
-    background-color: var(--clr-prm);
+    background-color: var(--clr-prm-400);
     color: var(--clr-f-900);
 }
 

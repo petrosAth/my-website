@@ -32,40 +32,67 @@
   --fs-900: rem;
 
   /* Palette */
-  --clr-hue: 240; /* primary color hue value */
-  --clr-sat: 75%; /* primary color saturation value */
-  --clr-lgt: 56%; /* primary color lightness value */
+  --h: 240; /* primary color hue value */
+  --s: 75%; /* primary color saturation value */
+  --l: 56%; /* primary color lightness value */
 
-  --clr-f-drk: 0.2; /* font alpha decrease step */
-  --clr-f: 0.7; /* font alpha */
-  --clr-f-lgt: 0.06; /* font alpha increase step */
+  --clr-prm-l-less: 15%; /* primary color lightness decrease step */
+  --clr-prm-l-more: 10%; /* primary color lightness increase step */
 
-  --clr-bg-drk: 2%; /* background alpha decrease step */
-  --clr-bg: 10%; /* background alpha */
-  --clr-bg-lgt: 4%; /* background alpha increase step */
+  --clr-sec-h: calc(var(--h) - 180);
+  --clr-sec-sat: var(--s);
 
-  --clr-prm: hsla(var(--clr-hue), var(--clr-sat), var(--clr-lgt), 1);
-  --clr-sec: hsla(calc(var(--clr-hue) - 180), var(--clr-sat), var(--clr-lgt), 1);
+  --clr-sec-l-less: 15%; /* secondary color lightness decrease step */
+  --clr-sec-l: var(--l); /* secondary color lightness */
+  --clr-sec-l-more: 10%; /* secondary color lightness increase step */
 
-  --clr-f-100: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) - var(--clr-f-drk) * 3));
-  --clr-f-200: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) - var(--clr-f-drk) * 2));
-  --clr-f-300: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) - var(--clr-f-drk) * 1));
-  --clr-f-400: hsla(var(--clr-hue), var(--clr-sat), 96%, var(--clr-f));
-  --clr-f-500: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 1));
-  --clr-f-600: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 2));
-  --clr-f-700: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 3));
-  --clr-f-800: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 4));
-  --clr-f-900: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 5));
+  --clr-f-a-less: 0.2; /* font alpha decrease step */
+  --clr-f-a: 0.7; /* font alpha */
+  --clr-f-a-more: 0.06; /* font alpha increase step */
 
-  --clr-bg-100: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) - var(--clr-bg-drk) * 3), 1);
-  --clr-bg-200: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) - var(--clr-bg-drk) * 2), 1);
-  --clr-bg-300: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) - var(--clr-bg-drk) * 1), 1);
-  --clr-bg-400: hsla(var(--clr-hue), var(--clr-sat), var(--clr-bg), 1);
-  --clr-bg-500: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 1), 1);
-  --clr-bg-600: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 2), 1);
-  --clr-bg-700: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 3), 1);
-  --clr-bg-800: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 4), 1);
-  --clr-bg-900: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 5), 1);
+  --clr-bg-lgt-less: 2%; /* background lightness decrease step */
+  --clr-bg-lgt: 10%; /* background lightness */
+  --clr-bg-lgt-more: 4%; /* background lightness increase step */
+
+  --clr-prm-100: hsl(var(--h), var(--s), max(0%, calc(var(--l) - calc(var(--clr-prm-l-less) * 3))));
+  --clr-prm-200: hsl(var(--h), var(--s), max(0%, calc(var(--l) - calc(var(--clr-prm-l-less) * 2))));
+  --clr-prm-300: hsl(var(--h), var(--s), max(0%, calc(var(--l) - calc(var(--clr-prm-l-less) * 1))));
+  --clr-prm-400: hsl(var(--h), var(--s), calc(var(--l)));
+  --clr-prm-500: hsl(var(--h), var(--s), min(calc(var(--l) + calc(var(--clr-prm-l-more) * 1)), 100%));
+  --clr-prm-600: hsl(var(--h), var(--s), min(calc(var(--l) + calc(var(--clr-prm-l-more) * 2)), 100%));
+  --clr-prm-700: hsl(var(--h), var(--s), min(calc(var(--l) + calc(var(--clr-prm-l-more) * 3)), 100%));
+  --clr-prm-800: hsl(var(--h), var(--s), min(calc(var(--l) + calc(var(--clr-prm-l-more) * 4)), 100%));
+  --clr-prm-900: hsl(var(--h), var(--s), min(calc(var(--l) + calc(var(--clr-prm-l-more) * 5)), 100%));
+
+  --clr-sec-100: hsl(var(--clr-sec-h), var(--s), max(0%, calc(var(--clr-sec-l) - calc(var(--clr-sec-l-less) * 3))));
+  --clr-sec-200: hsl(var(--clr-sec-h), var(--s), max(0%, calc(var(--clr-sec-l) - calc(var(--clr-sec-l-less) * 2))));
+  --clr-sec-300: hsl(var(--clr-sec-h), var(--s), max(0%, calc(var(--clr-sec-l) - calc(var(--clr-sec-l-less) * 1))));
+  --clr-sec-400: hsl(var(--clr-sec-h), var(--s), calc(var(--clr-sec-l)));
+  --clr-sec-500: hsl(var(--clr-sec-h), var(--s), min(100%, calc(var(--clr-sec-l) + calc(var(--clr-sec-l-more) * 1))));
+  --clr-sec-600: hsl(var(--clr-sec-h), var(--s), min(100%, calc(var(--clr-sec-l) + calc(var(--clr-sec-l-more) * 2))));
+  --clr-sec-700: hsl(var(--clr-sec-h), var(--s), min(100%, calc(var(--clr-sec-l) + calc(var(--clr-sec-l-more) * 3))));
+  --clr-sec-800: hsl(var(--clr-sec-h), var(--s), min(100%, calc(var(--clr-sec-l) + calc(var(--clr-sec-l-more) * 4))));
+  --clr-sec-900: hsl(var(--clr-sec-h), var(--s), min(100%, calc(var(--clr-sec-l) + calc(var(--clr-sec-l-more) * 5))));
+
+  --clr-f-100: hsla(var(--h), var(--s), 96%, max(0, calc(var(--clr-f-a) - var(--clr-f-a-less) * 3)));
+  --clr-f-200: hsla(var(--h), var(--s), 96%, max(0, calc(var(--clr-f-a) - var(--clr-f-a-less) * 2)));
+  --clr-f-300: hsla(var(--h), var(--s), 96%, max(0, calc(var(--clr-f-a) - var(--clr-f-a-less) * 1)));
+  --clr-f-400: hsla(var(--h), var(--s), 96%, var(--clr-f-a));
+  --clr-f-500: hsla(var(--h), var(--s), 96%, min(1, calc(var(--clr-f-a) + var(--clr-f-a-more) * 1)));
+  --clr-f-600: hsla(var(--h), var(--s), 96%, min(1, calc(var(--clr-f-a) + var(--clr-f-a-more) * 2)));
+  --clr-f-700: hsla(var(--h), var(--s), 96%, min(1, calc(var(--clr-f-a) + var(--clr-f-a-more) * 3)));
+  --clr-f-800: hsla(var(--h), var(--s), 96%, min(1, calc(var(--clr-f-a) + var(--clr-f-a-more) * 4)));
+  --clr-f-900: hsla(var(--h), var(--s), 96%, min(1, calc(var(--clr-f-a) + var(--clr-f-a-more) * 5)));
+
+  --clr-bg-100: hsla(var(--h), var(--s), max(0, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 3), 1));
+  --clr-bg-200: hsla(var(--h), var(--s), max(0, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 2), 1));
+  --clr-bg-300: hsla(var(--h), var(--s), max(0, calc(var(--clr-bg-lgt) - var(--clr-bg-lgt-less) * 1), 1));
+  --clr-bg-400: hsla(var(--h), var(--s), var(--clr-bg-lgt), 1);
+  --clr-bg-500: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 1), 1));
+  --clr-bg-600: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 2), 1));
+  --clr-bg-700: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 3), 1));
+  --clr-bg-800: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 4), 1));
+  --clr-bg-900: hsla(var(--h), var(--s), min(1, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 5), 1));
 
   /* Paddings */
   --pd-glb-b: 1.5rem;
@@ -74,7 +101,6 @@
   --pd-el-i: 0.875rem;
 
   /* Borders */
-  --b: 0.125rem solid var(--clr-sec);
+  --b: 0.125rem solid color-mix(in hsl, var(--clr-sec-400), transparent 60%);
   --br: 1.25rem;
-  /* --br: 3rem; */
 }
