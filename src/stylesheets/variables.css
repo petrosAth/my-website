@@ -21,13 +21,51 @@
   --fs-p: 1rem;
   --fs-btn: 1.5rem;
 
+  --fs-100: rem;
+  --fs-200: rem;
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: rem;
+  --fs-600: rem;
+  --fs-700: rem;
+  --fs-800: rem;
+  --fs-900: rem;
+
   /* Palette */
-  --f-clr: hsla(203, 25%, 73%, 1);
-  --f-clr-h: hsla(203, 75%, 98%, 1);
-  --clr-primary: hsla(203, 75%, 48%, 1);
-  --clr-secondary: hsla(145, 97%, 46%, 1);
-  --bg: hsla(203, 75%, 10%, 1);
-  --bg-light: hsla(203, 75%, 18%, 1);
+  --clr-hue: 240; /* primary color hue value */
+  --clr-sat: 75%; /* primary color saturation value */
+  --clr-lgt: 56%; /* primary color lightness value */
+
+  --clr-f-drk: 0.2; /* font alpha decrease step */
+  --clr-f: 0.7; /* font alpha */
+  --clr-f-lgt: 0.06; /* font alpha increase step */
+
+  --clr-bg-drk: 2%; /* background alpha decrease step */
+  --clr-bg: 10%; /* background alpha */
+  --clr-bg-lgt: 4%; /* background alpha increase step */
+
+  --clr-prm: hsla(var(--clr-hue), var(--clr-sat), var(--clr-lgt), 1);
+  --clr-sec: hsla(calc(var(--clr-hue) - 180), var(--clr-sat), var(--clr-lgt), 1);
+
+  --clr-f-100: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) - var(--clr-f-drk) * 3));
+  --clr-f-200: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) - var(--clr-f-drk) * 2));
+  --clr-f-300: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) - var(--clr-f-drk) * 1));
+  --clr-f-400: hsla(var(--clr-hue), var(--clr-sat), 96%, var(--clr-f));
+  --clr-f-500: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 1));
+  --clr-f-600: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 2));
+  --clr-f-700: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 3));
+  --clr-f-800: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 4));
+  --clr-f-900: hsla(var(--clr-hue), var(--clr-sat), 96%, calc(var(--clr-f) + var(--clr-f-lgt) * 5));
+
+  --clr-bg-100: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) - var(--clr-bg-drk) * 3), 1);
+  --clr-bg-200: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) - var(--clr-bg-drk) * 2), 1);
+  --clr-bg-300: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) - var(--clr-bg-drk) * 1), 1);
+  --clr-bg-400: hsla(var(--clr-hue), var(--clr-sat), var(--clr-bg), 1);
+  --clr-bg-500: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 1), 1);
+  --clr-bg-600: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 2), 1);
+  --clr-bg-700: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 3), 1);
+  --clr-bg-800: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 4), 1);
+  --clr-bg-900: hsla(var(--clr-hue), var(--clr-sat), calc(var(--clr-bg) + var(--clr-bg-lgt) * 5), 1);
 
   /* Paddings */
   --pd-glb-b: 1.5rem;
@@ -36,6 +74,7 @@
   --pd-el-i: 0.875rem;
 
   /* Borders */
-  --b: 0.125rem solid var(--clr-secondary);
+  --b: 0.125rem solid var(--clr-sec);
   --br: 1.25rem;
+  /* --br: 3rem; */
 }

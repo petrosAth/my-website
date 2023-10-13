@@ -1,6 +1,6 @@
 body {
-  color: var(--f-clr);
-  background-color: var(--bg);
+  color: var(--clr-f-400);
+  background-color: var(--clr-bg-400);
 }
 
 .app {
@@ -32,7 +32,6 @@ body {
   padding-block: var(--pd-el-b) 0;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
-
   display: grid;
   grid-auto-columns: 70dvw;
   grid-auto-flow: column;
@@ -43,7 +42,7 @@ body {
   scroll-snap-align: center;
   box-sizing: border-box;
   /* border: 1px solid green; */
-  background-color: var(--bg-light);
+  background-color: var(--clr-bg-500);
   padding: var(--pd-el-b) var(--pd-el-i);
   border-radius: var(--br);
 }
@@ -66,6 +65,8 @@ body {
 
 .projects__grid__item__links {
   padding-top: var(--pd-el-b);
+    background-color: var(--clr-prm);
+    color: var(--clr-f-900);
 }
 
 .footer {

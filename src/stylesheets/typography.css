@@ -7,21 +7,21 @@ body {
 h1 {
   font-size: var(--fs-1);
   font-weight: var(--fw-b);
-  color: var(--f-clr-h);
+  color: var(--clr-f-900);
   margin: 0;
 }
 
 h2 {
   font-size: var(--fs-2);
   font-weight: var(--fw-m);
-  color: var(--f-clr-h);
+  color: var(--clr-f-900);
   margin: 0;
   padding-top: var(--pd-el-b);
 }
 
 h3 {
   font-size: var(--fs-3);
-  color: var(--f-clr-h);
+  color: var(--clr-f-900);
   margin: 0;
   padding-top: var(--pd-el-b);
 }
@@ -29,18 +29,18 @@ h3 {
 h4 {
   font-size: var(--fs-4);
   font-weight: var(--fw-m);
-  color: var(--clr-secondary);
+  color: var(--clr-sec);
   margin: 0;
 }
 
 p {
   font-size: var(--fs-p);
   font-weight: var(--fw-r);
-  color: var(--f-clr);
+  color: var(--clr-f-400);
   margin: 0;
   padding-top: var(--pd-el-b);
 }
 
 a {
-  color: var(--clr-primary);
+  color: var(--clr-prm);
 }
