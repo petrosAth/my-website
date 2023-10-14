@@ -22,7 +22,7 @@ body {
 }
 
 .header__title__label {
-  color: var(--clr-f-700);
+  color: var(--clr-f-600);
   padding-top: 0.3125rem;
 }
 
