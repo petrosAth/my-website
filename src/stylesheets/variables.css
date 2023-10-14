@@ -21,11 +21,6 @@
   --fs-p: 1rem;
   --fs-btn: 1.5rem;
 
-  @media (min-width: 600px) {
-    --fs-1: 2.625rem;
-    --fs-2: 1.375rem;
-  }
-
   /* Palette */
   --h: 230; /* primary color hue value */
   --s: 75%; /* primary color saturation value */
@@ -97,6 +92,11 @@
   --pd-sec-i: 1.5rem;
   --pd-el-b: 0.875rem;
   --pd-el-i: 0.875rem;
+
+  @media (min-width: 768px) {
+    --pd-body-b: 6rem;
+    --pd-body-i: 3rem;
+  }
 
   /* Borders */
   --b: 0.125rem solid color-mix(in hsl, var(--clr-sec-400), transparent 60%);
