@@ -23,9 +23,9 @@ h2 {
 
 h3 {
   font-size: var(--fs-3);
-  font-weight: var(--fw-m);
+  font-weight: var(--fw-r);
   letter-spacing: -0.0625rem;
-  color: var(--clr-f-800);
+  color: var(--clr-f-900);
   margin: 0;
   padding-top: var(--pd-el-b);
 }
