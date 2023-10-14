@@ -7,6 +7,7 @@ body {
 h1 {
   font-size: var(--fs-1);
   font-weight: var(--fw-b);
+  letter-spacing: -0.0625rem;
   color: var(--clr-f-900);
   margin: 0;
 }
@@ -14,6 +15,7 @@ h1 {
 h2 {
   font-size: var(--fs-2);
   font-weight: var(--fw-sb);
+  letter-spacing: -0.0625rem;
   color: var(--clr-f-900);
   margin: 0;
   padding-top: var(--pd-el-b);
@@ -37,6 +39,7 @@ h4 {
 p {
   font-size: var(--fs-p);
   font-weight: var(--fw-r);
+  line-height: 1.5;
   color: var(--clr-f-400);
   margin: 0;
   padding-top: var(--pd-el-b);
