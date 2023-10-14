@@ -16,7 +16,7 @@ h2 {
   font-size: var(--fs-2);
   font-weight: var(--fw-sb);
   letter-spacing: -0.0625rem;
-  color: var(--clr-f-900);
+  color: var(--clr-f-800);
   margin: 0;
   padding-top: var(--pd-el-b);
 }

@@ -1,5 +1,5 @@
 :root {
-  /* Font familiew */
+  /* Font families */
   --ff: 'Inter', sans-serif;
 
   /* Font weights */
@@ -25,16 +25,6 @@
     --fs-1: 2.625rem;
     --fs-2: 1.375rem;
   }
-
-  --fs-100: rem;
-  --fs-200: rem;
-  --fs-300: 0.75rem;
-  --fs-400: 1rem;
-  --fs-500: rem;
-  --fs-600: rem;
-  --fs-700: rem;
-  --fs-800: rem;
-  --fs-900: rem;
 
   /* Palette */
   --h: 230; /* primary color hue value */
