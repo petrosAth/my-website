@@ -10,24 +10,25 @@ body {
 }
 
 .header {
-  padding-block: calc(var(--pd-glb-b) * 3) calc(var(--pd-glb-b) * 2);
-  padding-inline: var(--pd-glb-i);
+  padding-block: var(--pd-body-b);
+  padding-inline: var(--pd-body-i);
+}
 
 .header__title__label {
   padding-top: 0.375rem;
 }
 
 .about {
-  padding-block: var(--pd-glb-b);
-  padding-inline: var(--pd-glb-i);
+  padding-block: var(--pd-sec-b);
+  padding-inline: var(--pd-body-i);
 }
 
 .projects {
-  padding-block: var(--pd-glb-b);
+  padding-block: var(--pd-sec-b);
 
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     & {
-      padding-inline: var(--pd-glb-i);
+      padding-inline: var(--pd-body-i);
       display: grid;
       grid-template-columns: 1fr 4fr;
     }
@@ -35,10 +36,10 @@ body {
 }
 
 .projects__title {
-  padding-inline: var(--pd-glb-i);
+  padding-inline: var(--pd-body-i);
   align-self: start;
 
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     & {
       padding-inline: 0;
       position: sticky;
@@ -56,7 +57,7 @@ body {
   grid-auto-flow: column;
   gap: 1em;
 
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     & {
       grid-auto-columns: auto;
       grid-template-columns: 1fr;
@@ -116,8 +117,8 @@ body {
 }
 
 .footer {
-  padding-block: var(--pd-glb-b);
-  padding-inline: var(--pd-glb-i);
+  padding-block: var(--pd-sec-b);
+  padding-inline: var(--pd-body-i);
 }
 
 .footer__list {

@@ -91,8 +91,10 @@
   --clr-bg-900: hsla(var(--h), var(--s), min(100%, calc(var(--clr-bg-lgt) + var(--clr-bg-lgt-more) * 5)), 1);
 
   /* Paddings */
-  --pd-glb-b: 1.5rem;
-  --pd-glb-i: 1.5rem;
+  --pd-body-b: 3rem;
+  --pd-body-i: 1.5rem;
+  --pd-sec-b: 1.5rem;
+  --pd-sec-i: 1.5rem;
   --pd-el-b: 0.875rem;
   --pd-el-i: 0.875rem;
 
