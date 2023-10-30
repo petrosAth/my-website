@@ -16,7 +16,7 @@
   /* Font sizes */
   --fs-1: 2.25rem;
   --fs-2: 1.25rem;
-  --fs-3: 1.125rem;
+  --fs-3: 1.1875rem;
   --fs-4: 0.75rem;
   --fs-p: 1rem;
   --fs-btn: 1.5rem;
@@ -88,8 +88,7 @@
   /* Paddings */
   --pd-body-b: 3rem;
   --pd-body-i: 1.5rem;
-  --pd-sec-b: 1.5rem;
-  --pd-sec-i: 1.5rem;
+  --pd-sect-b: 2rem;
   --pd-el-b: 0.875rem;
   --pd-el-i: 0.875rem;
 
